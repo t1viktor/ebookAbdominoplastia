@@ -54,6 +54,7 @@ background-size: cover;
 
     display: flex;
     flex-direction: column;
+    text-align: center;
     gap: 10px;
     justify-items: center;
     justify-content: center;
@@ -66,4 +67,30 @@ background-size: cover;
     border-bottom: solid white 1px;
     font-weight: bold;
     text-shadow: 0 0 20px black;
+}
+
+@media (max-width: 425px) {
+    body {
+        font-size: 16px; /* Ajuste o tamanho da fonte */
+    }
+
+    header h1 {
+        font-size: 2rem; /* Ajuste o tamanho do título no header */
+    }
+
+    .imgSec {
+        width: 100%; /* Ajuste a largura das imagens para caber na tela */
+    }
+
+    .sec {
+        padding: 15px; /* Ajuste o padding das seções */
+    }
+
+    .h2Sec {
+        font-size: 1.5rem; /* Ajuste o tamanho do subtítulo */
+    }
+
+    .pSec {
+        font-size: 1rem; /* Ajuste o tamanho do texto */
+    }
 }
