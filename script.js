@@ -1,6 +1,6 @@
 let secs = document.querySelectorAll(".sec");
 secs.forEach(sec => {
-    sec.classList.add('shadow-inner', 'border-b-2', 'border-black', 'shadow-black', 'bg-slate-800','items-center', 'p-6', 'flex', 'flex-col', 'gap-10');
+    sec.classList.add('shadow-inner', 'border-b-2', 'border-black', 'shadow-black', 'bg-slate-800','items-center', 'p-6', 'flex', 'flex-col', 'gap-4');
 });
 
 let imgSec = document.querySelectorAll(".imgSec");
@@ -15,6 +15,6 @@ h2Sec.forEach(h2Sec => {
 
 let pSec = document.querySelectorAll(".pSec");
 pSec.forEach(pSec => {
-    pSec.classList.add('text-gray-200', 'py-10', 'px-6', 'text-lg', 'items-center', 'flex', 'flex-col');
+    pSec.classList.add('text-gray-200', 'py-10', 'px-6', 'text-lg', 'items-center', 'flex', 'gap-6', 'flex-col');
 });
 
