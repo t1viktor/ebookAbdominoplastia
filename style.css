@@ -18,6 +18,67 @@
     color: black;
 }
 
+.indicador{
+    background-color: #dd8e44;
+    transform-origin: left;
+    height: 5px;
+    inset: 0;
+    position: fixed;
+
+    animation: indicador 1ms ease-in-out;
+    animation-timeline: scroll();
+
+    z-index: 100000;
+}
+
+@keyframes indicador{
+    from{
+      scale: 0 1;
+    }
+
+    to{
+      scale: 1 1;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@keyframes tela {
+    0%{
+        opacity: 1;  
+    }
+
+    100%{
+       opacity: 0;
+       scale: 0.5;
+
+    }
+
+}
+
+main section{
+    animation: slide ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
+ 
+}
+
+@keyframes slide {
+    from{
+      opacity: 0.5;  
+      transform: translateX(-100vw);
+    }
+    
+    to{
+      transform: translateX(0vw);
+    }
+    
+    }
+    
+
+
 h2, h1{
     font-family: "Inter", serif;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.596);

@@ -17,4 +17,3 @@ let pSec = document.querySelectorAll(".pSec");
 pSec.forEach(pSec => {
     pSec.classList.add('text-gray-200', 'py-10', 'px-6', 'text-lg', 'items-center', 'flex', 'gap-6', 'flex-col');
 });
-
